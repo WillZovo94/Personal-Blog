@@ -14,7 +14,7 @@ html {
     margin: 0;
     padding: 0;
     background-color: var(--bg-color-light);
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 #main-header {
@@ -40,7 +40,7 @@ html {
     color: var(--bg-color-light-4);
 }
 
-/* palm tree art and animation*/
+/* umbrella art and animation*/
 
 #umbrella-art {
     display: flex;
@@ -115,6 +115,8 @@ html {
 #main-section {
     display: flex;
     position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;;
     margin: 0 auto;
     top: 100px;
     width: 80%;
@@ -125,5 +127,56 @@ html {
 
 fieldset {
     border: none;
+}
+
+.fieldset-divs {
+    padding: 0 100px;
+}
+
+
+#username-input, #title-input, #content-input {
+    margin-top: 10px;
+    display: flex;
+    height: 30px;
+    width: 79vw;
+    height: 30px;
+}
+
+.fieldset-divs > input, .fieldset-divs > textarea {
+    border-radius: 3px;
+    padding: 0 5px;
+    border: 2px solid var(--bg-color-light-4);
+    box-shadow: 0 0 5px 1px var(--bg-color-light-4);
+    outline: none;
+}
+
+label {
+    font-size: 18px;
+    font-style: italic;
+    color: var(--bg-color-light-4);
+    font-weight: bolder;
+}
+
+#content-input {
+    max-width: 79vw;
+    min-width: 79vw;
+    height: 85px;
+    max-height: 135px;
+    min-height: 30px;
+}
+
+#submit-button {
+    width: 15vw;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    background-color: var(--bg-color-light-4);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
