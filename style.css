@@ -36,6 +36,7 @@ html {
     font-style: italic;
     padding: 0 20px;
     color: var(--bg-color-light-4);
+    z-index: 3;
 }
 
 /* umbrella art and animation*/
@@ -50,6 +51,9 @@ html {
     background: linear-gradient(var(--bg-color-light-2), var(--bg-color-light-3));
     width: 200px;
     height: 125px;
+    border-bottom: 2px solid var(--bg-color-light-4);
+    z-index: 1;
+ 
 }
 
 #pole {
@@ -155,7 +159,7 @@ fieldset {
 }
 
 label {
-    font-size: 18px;
+    font-size: 25px;
     font-style: italic;
     color: var(--bg-color-light-4);
     font-weight: bolder;
@@ -170,7 +174,7 @@ label {
 }
 
 #submit-button {
-    width: 12vw;
+    width: 275px;
     height: 40px;
     font-size: 20px;
     font-weight: bolder;
@@ -194,4 +198,19 @@ label {
     background-position: 0%;
     color: var(--bg-color-light-4);
     box-shadow: 0 0 5px 5px var(--bg-color-light-4);
+}
+
+@media screen and (max-width: 450px) {
+    #left-head-container {
+        font-size: 15px;
+    }
+
+    #umbrella-art {
+        left: 275px;
+        width: 89px;
+    }
+
+    #submit-button {
+        width: 150px;
+    }
 }
