@@ -1,9 +1,10 @@
 const submitButton = document.getElementById("submit-button");
+const goBack = document.getElementById("back-btn");
 const userName = document.getElementById('username-input');
 const title = document.getElementById('title-input');
 const content = document.getElementById('content-input');
 
-submitButton.addEventListener('click', function(event) {
+if (submitButton) {submitButton.addEventListener('click', function(event) {
     event.preventDefault();
 
     const blogInput = {
@@ -33,3 +34,13 @@ submitButton.addEventListener('click', function(event) {
     
     return;
 })
+}
+
+if (goBack) {goBack.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    window.location.href="index1.html"
+
+    return;
+})
+}
