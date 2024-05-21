@@ -1,0 +1,12 @@
+.divClass {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 150px;
+    background:linear-gradient(var(--bg-color-light-2), var(--bg-color-light-3));
+    border-radius: 10px;
+    border: 3px solid var(--bg-color-light-4);
+}

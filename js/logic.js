@@ -7,11 +7,11 @@ const content = document.getElementById('content-input');
 if (submitButton) {submitButton.addEventListener('click', function(event) {
     event.preventDefault();
 
-    const blogInput = {
-        Username: userName.value,
-        title: title.value,
-        content: content.value.trim()
-    };
+    let blogInput = [
+        userName.value,
+        title.value,
+        content.value.trim()
+    ];
 
     if(userName.value === '') {
         alert("Please enter username");
@@ -24,13 +24,13 @@ if (submitButton) {submitButton.addEventListener('click', function(event) {
         return;
     };
 
-    localStorage.setItem('blogInput', JSON.stringify(blogInput));
+    localStorage.setItem(`${title.value}`, JSON.stringify(blogInput));
 
     userName.value = '';
     title.value = '';
     content.value='';
 
-    window.location.href="index2.html"
+    window.location.href="blog.html"
     
     return;
 })
@@ -44,3 +44,29 @@ if (goBack) {goBack.addEventListener('click', function(event) {
     return;
 })
 }
+
+
+
+
+function renderEverything() {
+    // for (let index = 0; index < localStorage.length; index++) {
+    //    const allKeys = localStorage.key([index]);
+        
+    //    const data = JSON.parse(localStorage.getItem(allKeys));
+
+
+       // if (Array.isArray(data)) {
+       //     console.log(data.length)
+       // }
+
+       const keys = Object.keys(localStorage);
+
+      keys.forEach(key => {
+        const div = document.createElement('div');
+        const parentElement = document.getElementById('body');
+        document.body.appendChild(div);
+        div.classList.add('divClass')
+       })
+  };
+
+// renderEverything();
