@@ -1,3 +1,5 @@
+
+
 html {
     font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -33,7 +35,7 @@ html {
     padding: 5px;
     margin-right: 10px;
     border-radius: 5px;
-    color: #ff00e1b2;
+    color: var(--blog-p);
     font-family:Arial, Helvetica, sans-serif;
     overflow: auto;
     
@@ -41,5 +43,29 @@ html {
 }
 
 .blog-user {
-    color: #940783b2;
+    color: var(--blog-user);
+    font-style: italic;
+    padding: 3px;
+}
+
+#back-btn {
+    padding: 10px 30px;
+    border: none;
+    color: var(--bg-color-light);
+    background-color: var(--bg-color-light-4);
+    background-image: linear-gradient(to left, var(--bg-color-light-4) 40%, var(--bg-color-light) 60%);
+    background-size: 300% 100%;
+    background-position: 100%;
+    transition: background-position 1s,
+    color 1s,
+    box-shadow 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#back-btn:hover {
+    background-position: 0%;
+    color: var(--bg-color-light-4);
+    box-shadow: 0 0 5px 5px var(--bg-color-light-4);
 }

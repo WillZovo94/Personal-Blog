@@ -1,8 +1,19 @@
-:root {
+:root[data-theme='light'] {
     --bg-color-light: #C3FF93;
     --bg-color-light-2: #FFDB5C;
     --bg-color-light-3: #FFAF61;
     --bg-color-light-4: #FF70AB;
+    --blog-p: #ff00e1b2;
+    --blog-user: #940783b2;
+
+}
+
+:root[data-theme='dark'] {
+    --bg-color-light: #10439F;
+    --bg-color-light-2: #874CCC;
+    --bg-color-light-3: #C65BCF;
+    --bg-color-light-4: #F27BBD;
+    --blog-p: #f4e9f3b2;
 }
 
 * {
@@ -19,7 +30,7 @@ html {
     display: flex;
     position: relative;
     justify-content: space-between;
-    background: linear-gradient(var(--bg-color-light-2), var(--bg-color-light-3));
+    background-image: linear-gradient(var(--bg-color-light-2), var(--bg-color-light-3));
     border-bottom: 3px solid var(--bg-color-light-4);
     height: 125px;
     width: 100%;
@@ -46,26 +57,16 @@ html {
     z-index: 5;
 }
 
-#back-btn {
-    padding: 10px 30px;
-    border: none;
-    color: var(--bg-color-light);
-    background-color: var(--bg-color-light-4);
-    background-image: linear-gradient(to left, var(--bg-color-light-4) 40%, var(--bg-color-light) 60%);
-    background-size: 300% 100%;
-    background-position: 100%;
-    transition: background-position 1s,
-    color 1s,
-    box-shadow 0.5s;
+#dark-light-mode {
     cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
 }
 
-#back-btn:hover {
-    background-position: 0%;
-    color: var(--bg-color-light-4);
-    box-shadow: 0 0 5px 5px var(--bg-color-light-4);
+#dark-light-mode:hover {
+    opacity: 0.9;
+}
+
+#dark-light-mode:active {
+    opacity: 0.7;
 }
 
 #dark-light-mode {

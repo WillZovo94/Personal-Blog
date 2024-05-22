@@ -39,22 +39,6 @@ function loadFromLocalStorage() {
         div.appendChild(blogUser);
     }
 
-
-    /*
-    storedData.username.forEach((username) => {
-        console.log(storedData);
-        
-        /*console.log(storedData);
-        const div = document.createElement('div');
-        const pEl = document.createElement('p');
-        pEl.textContent = storedData.username;
-        div.classList.add('pEl');
-        div.classList.add('divClass');
-        document.body.appendChild(div);
-        div.appendChild(pEl);
-        
-    })*/
-
 }
 
 loadFromLocalStorage();
