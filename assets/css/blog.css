@@ -1,4 +1,8 @@
-
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 html {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -68,4 +72,49 @@ html {
     background-position: 0%;
     color: var(--bg-color-light-4);
     box-shadow: 0 0 5px 5px var(--bg-color-light-4);
+}
+
+#footer {
+    display: flex;
+    position: sticky;
+    top: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(var(--bg-color-light-2), var(--bg-color-light-3));
+    border-top: 3px solid var(--bg-color-light-4);
+    width: 100%;
+    height: 150px;
+    z-index: 5;
+    order: 5;
+}
+
+#portfolio-link {
+    padding: 10px 20px;
+    color: var(--bg-color-light);
+    background-color: var(--bg-color-light-4);
+    background-image: linear-gradient(to left, var(--bg-color-light-4) 40%, var(--bg-color-light) 60%);
+    background-size: 300% 100%;
+    background-position: 100%;
+    transition: background-position 1s,
+    color 1s,
+    box-shadow 0.5s;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#portfolio-link:hover {
+    background-position: 0%;
+    color: var(--bg-color-light-4);
+    box-shadow: 0 0 5px 5px var(--bg-color-light-4);
+
+}
+
+#portfolio-link:active {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
 }

@@ -71,8 +71,24 @@ html {
 
 #dark-light-mode {
     padding: 10px 30px;
-    border-radius: 5px;
     border: none;
+    color: var(--bg-color-light);
+    background-color: var(--bg-color-light-4);
+    background-image: linear-gradient(to left, var(--bg-color-light-4) 40%, var(--bg-color-light) 60%);
+    background-size: 300% 100%;
+    background-position: 100%;
+    transition: background-position 1s,
+    color 1s,
+    box-shadow 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#dark-light-mode:hover {
+    background-position: 0%;
+    color: var(--bg-color-light-4);
+    box-shadow: 0 0 5px 5px var(--bg-color-light-4);
 }
 
 /* umbrella art and animation*/
@@ -248,5 +264,14 @@ label {
 
     #submit-button {
         width: 150px;
+    }
+
+    #right-head-container {
+        align-items: end;
+        margin-bottom: 2px;
+    }
+
+    #back-btn, #dark-light-mode {
+        margin: 0 3px;
     }
 }
