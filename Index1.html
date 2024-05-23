@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<!-- setting the data-theme of the html document for theme switcher-->
 <html lang="en" data-theme="light">
     <head>
         <title>Personal Blog</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/form.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
@@ -13,10 +15,12 @@
                 <h1>Sunset Lounge</h1>
             </div>
             <div id="right-head-container">
+                <!-- Added a dark or light mode button below-->
                 <button id="dark-light-mode">Dark Mode</button>
              </div>
         </header>
-
+        
+        <!-- This set of divs below is the umbrella art-->
         <div id="umbrella-art">
             <div id="pole">
                 <div id="umbrella-top"></div>
@@ -24,6 +28,7 @@
         </div>
 
         <h1 id="header-message">Rewind your thoughts and let them soak in <span id="paradise-span">PARADISE</span></h1>
+        <!-- Start of form -->
         <form id="main-section">
             <fieldset class="fieldset-divs">
                 <label for="username-input">Username</label>
@@ -42,12 +47,8 @@
 
                 <input id="submit-button" type="submit">
         </form>
-        
 
-
-
-
-        <script src="js/form.js"></script>
-        <script src="js/logic.js"></script>
+        <script src="/assets/js/form.js"></script>
+        <script src="/assets/js/logic.js"></script>
     </body>
 </html>

@@ -4,11 +4,6 @@ body {
     flex-direction: column;
 }
 
-html {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
 .divClass {
     display: flex;
     flex-direction: column;

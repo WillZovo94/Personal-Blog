@@ -1,0 +1,98 @@
+/* Adding similar color to elements */
+#header-message, label, #submit-button:hover {
+    color: var(--bg-color-light-4);
+}
+/* Adding similar displays to elements */
+#main-section, .fieldset-divs, #username-input, #title-input, #content-input {
+    display: flex;
+}
+
+
+#header-message {
+    position: relative;
+    top: 45px;
+    text-align: center;
+    font-style: italic;
+}
+
+#paradise-span {
+    background: -webkit-linear-gradient(var(--bg-color-light-4), rgb(215, 184, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main-section {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    top: 100px;
+    width: 75%;
+    height: 600px;
+    background:linear-gradient(var(--bg-color-light-2), var(--bg-color-light-3));
+    box-shadow: inset 0 0 20px 2px var(--bg-color-light-4);
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-divs {
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#username-input, #title-input, #content-input {
+    margin-top: 10px;
+    height: 30px;
+    width: 60%;
+}
+
+.fieldset-divs > input, .fieldset-divs > textarea {
+    border-radius: 3px;
+    padding: 0 5px;
+    border: 2px solid var(--bg-color-light-4);
+    box-shadow: 0 0 5px 1px var(--bg-color-light-4);
+    outline: none;
+}
+
+label {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+#content-input {
+    max-width: 60%;
+    min-width: 60%;
+    resize: none;
+    height: 85px;
+    margin-top: 10px;
+}
+
+#submit-button {
+    width: 275px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--bg-color-light);
+    background-color: var(--bg-color-light-4);
+    background-image: linear-gradient(to left, var(--bg-color-light-4) 40%, var(--bg-color-light) 60%);
+    background-size: 300% 100%;
+    background-position: 100%;
+    transition: background-position 1s,
+    color 1s,
+    box-shadow 0.5s;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-position: 0%;
+    box-shadow: 0 0 5px 5px var(--bg-color-light-4);
+}

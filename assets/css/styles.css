@@ -16,6 +16,8 @@
     --blog-p: #f4e9f3b2;
 }
 
+/* Added data-theme to the roots, so we're able to switch them out when needed for dark/light mode toggle */
+
 * {
     margin: 0;
     padding: 0;
@@ -26,8 +28,12 @@ html {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#main-header {
+/* Adding elements with similar display styling */
+#main-header, #left-head-container, #right-head-container, #umbrella-art {
     display: flex;
+}
+
+#main-header {
     position: relative;
     justify-content: space-between;
     background-image: linear-gradient(var(--bg-color-light-2), var(--bg-color-light-3));
@@ -37,7 +43,6 @@ html {
 }
 
 #left-head-container, #right-head-container {
-    display: flex;
     align-items: center;
     text-align: center;
 }
@@ -51,19 +56,12 @@ html {
 }
 
 #right-head-container {
-    display: flex;
     justify-content: space-evenly;
     width: 300px;
     z-index: 5;
 }
 
-#dark-light-mode {
-    cursor: pointer;
-}
-
-#dark-light-mode:hover {
-    opacity: 0.9;
-}
+/* Adding styles to dark / light mode toggle button */
 
 #dark-light-mode:active {
     opacity: 0.7;
@@ -89,12 +87,12 @@ html {
     background-position: 0%;
     color: var(--bg-color-light-4);
     box-shadow: 0 0 5px 5px var(--bg-color-light-4);
+    opacity: 0.8;
 }
 
 /* umbrella art and animation*/
 
 #umbrella-art {
-    display: flex;
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -152,106 +150,8 @@ html {
 
 /* end of animation and art */
 
-#header-message {
-    position: relative;
-    top: 45px;
-    text-align: center;
-    color: var(--bg-color-light-4);
-    font-style: italic;
-}
 
-#paradise-span {
-    background: -webkit-linear-gradient(var(--bg-color-light-4), rgb(215, 184, 5));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#main-section {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    top: 100px;
-    width: 75%;
-    height: 600px;
-    background:linear-gradient(var(--bg-color-light-2), var(--bg-color-light-3));
-    box-shadow: inset 0 0 20px 2px var(--bg-color-light-4);
-}
-
-form {
-    border: 1px solid black;
-}
-
-fieldset {
-    border: none;
-}
-
-.fieldset-divs {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-#username-input, #title-input, #content-input {
-    margin-top: 10px;
-    display: flex;
-    height: 30px;
-    width: 60%;
-    height: 30px;
-}
-
-.fieldset-divs > input, .fieldset-divs > textarea {
-    border-radius: 3px;
-    padding: 0 5px;
-    border: 2px solid var(--bg-color-light-4);
-    box-shadow: 0 0 5px 1px var(--bg-color-light-4);
-    outline: none;
-}
-
-label {
-    font-size: 25px;
-    font-style: italic;
-    color: var(--bg-color-light-4);
-    font-weight: bolder;
-}
-
-#content-input {
-    max-width: 60%;
-    min-width: 60%;
-    resize: none;
-    height: 85px;
-    margin-top: 10px;
-}
-
-#submit-button {
-    width: 275px;
-    height: 40px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: var(--bg-color-light);
-    background-color: var(--bg-color-light-4);
-    background-image: linear-gradient(to left, var(--bg-color-light-4) 40%, var(--bg-color-light) 60%);
-    background-size: 300% 100%;
-    background-position: 100%;
-    transition: background-position 1s,
-    color 1s,
-    box-shadow 0.5s;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-#submit-button:hover {
-    background-position: 0%;
-    color: var(--bg-color-light-4);
-    box-shadow: 0 0 5px 5px var(--bg-color-light-4);
-}
-
+/* Added responsiveness */
 @media screen and (max-width: 450px) {
     #left-head-container {
         font-size: 15px;
@@ -272,6 +172,7 @@ label {
     }
 
     #back-btn, #dark-light-mode {
-        margin: 0 3px;
+        margin: 0px 5px;
+        opacity: 0.7;
     }
 }
