@@ -8,13 +8,13 @@
 
 ## Usage 
 - You are given a responsive form to input data that will be towards your blog post.
-
+![Main Page](/assets/images/main-html-page.png)
 - On the top you have a dark mode button that helps toggle dark mode on or off.
-- 
+![Dark Mode Toggle](/assets/images/dark-mode-toggle.png)
 - The user will see a new page selection that showcases their blog post on a blog page.
-- 
+![Blog Page](/assets/images/blog-page.png)
 - The user can see their data being stored on localStorage.
-- 
+![LocalStorage Data](/assets/images/local-storage-image.png)
 - You're given a back button which will bring you back to the previous page to create more blog posts.
 - Lastly, you're given a footer with a portfolio link.
 
