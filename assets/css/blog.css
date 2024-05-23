@@ -4,6 +4,7 @@ body {
     flex-direction: column;
 }
 
+/*These classes below are for JS newly created classes for blog posts*/
 .divClass {
     display: flex;
     flex-direction: column;
@@ -46,6 +47,8 @@ body {
     font-style: italic;
     padding: 3px;
 }
+
+/* End of JS created content */
 
 #back-btn {
     padding: 10px 30px;
