@@ -1,6 +1,6 @@
 # Sunset-Lounge-Personal-Blog
 
-[Personal Blog](https://willzovo94.github.io/Personal-Blog/)
+[Personal Blog](https://willzovo94.github.io/Sunset-Lounge-Personal-Blog/)
 
 ## Description
 - This project includes a functional personal blog. It provides a responsive design and functional javascript which helps you store user data into local storage and output that data onto the second page in a nice organized manner, creating blog posts.
