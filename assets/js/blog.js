@@ -4,7 +4,7 @@ const goBack = document.querySelector('#back-btn')
 // go back button function with click event.
 if (goBack) {goBack.addEventListener('click', function(event) {
     event.preventDefault();
-    window.location.href="index1.html"
+    window.location.href="index.html"
     return;
 })
 }
