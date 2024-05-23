@@ -57,7 +57,7 @@ if (submitButton) {submitButton.addEventListener('click', function(event) {
 
 
 
-// a theme switch function
+// theme switch function
 function changeTheme() {
     // targets the root element
     const rootElement = document.documentElement;
