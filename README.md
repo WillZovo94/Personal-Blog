@@ -1,4 +1,4 @@
-# Personal Blog
+# Sunset-Lounge-Personal-Blog
 
 [Personal Blog](https://willzovo94.github.io/Personal-Blog/)
 
